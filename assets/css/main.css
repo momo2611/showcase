@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+article,
+aside,
+textarea,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+textarea {
+  overflow: auto;
+}
+a {
+  background: transparent;
+}
+a:active,
+a:focus,
+a:hover {
+  outline: 0;
+}
+.logo {
+  font-family: times;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 43px;
+  padding-bottom: 0px;
+  padding-left: 0%;
+  padding-right: 5%;
+  padding-top: 0px;
+  text-transform: uppercase;
+}
+.logo,
+.logo a {
+  color: #282828;
+}
+.logo a:hover {
+  color: #282828;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+}
