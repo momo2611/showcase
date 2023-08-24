@@ -47,6 +47,7 @@
 
     .project-cover:nth-child(4n + 1) {
         clear: none;
+        margin-left: auto;
     }
 }
 
@@ -59,6 +60,12 @@
 
 .project-cover:nth-child(4n + 1) {
     clear: left;
+    margin-left: auto;
+}
+
+
+.project-cover:nth-child(4n) {
+    margin-right: 0;
 }
 
 .project-cover img {
