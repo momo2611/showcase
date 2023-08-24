@@ -19,8 +19,9 @@
                     <!-- nav link content -->
                     <nav class="mobile-menu">
                         <div class="gallery-title" v-for="content in navContent" key="content.title">
-                            <NuxtLink class="link-title" :class="content.active ? 'active' : ''" :to="content.link">{{
-                                content.title }}
+                            <NuxtLink class="link-title" :class="content.active ? 'active' : ''" :to="content.link"
+                                @click="toggleMenu">{{
+                                    content.title }}
                             </NuxtLink>
                         </div>
                     </nav>
@@ -203,6 +204,7 @@ const toggleMenu = () => {
 onMounted(() => {
     checkMobile();
     window.addEventListener('resize', checkMobile);
+
 });
 
 onBeforeUnmount(() => {
